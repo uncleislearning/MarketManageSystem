@@ -1,0 +1,7 @@
+CREATE TABLE GOODS(
+  gid   INT(10)  NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  gname   VARCHAR(20)  NOT NULL UNIQUE,
+  gprice  D(10,2) not null,
+  gnum    INT(11)   not null
+) ENGINE = InnoDB;
+

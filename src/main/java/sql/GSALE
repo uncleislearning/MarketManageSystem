@@ -1,0 +1,10 @@
+CREATE TABLE GSALES(
+  gsid INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  sdate TIMESTAMP (6) DEFAULT current_timestamp(6),
+  snum INT(11) NOT NULL,
+  gid  INT(10) NOT NULL ,
+  sid  INT(10) NOT NULL,
+  FOREIGN KEY (gid) REFERENCES GOODS(gid),
+  FOREIGN KEY (sid) REFERENCES salesman(sid)
+)ENGINE =InnoDB;
+
