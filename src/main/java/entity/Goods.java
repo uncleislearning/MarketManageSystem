@@ -9,6 +9,26 @@ public class Goods{
     private float gprice;
     private int gnum;
 
+
+    public Goods() {
+    }
+
+    public Goods(String gname) {
+        this.gname = gname;
+    }
+
+    public Goods(String gname, float gprice, int gnum) {
+        this.gname = gname;
+        this.gprice = gprice;
+        this.gnum = gnum;
+    }
+    public Goods(int gid, String gname, float gprice, int gnum) {
+        this.gid = gid;
+        this.gname = gname;
+        this.gprice = gprice;
+        this.gnum = gnum;
+    }
+
     public int getGid() {
         return gid;
     }

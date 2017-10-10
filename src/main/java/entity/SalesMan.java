@@ -8,6 +8,21 @@ public class SalesMan {
     private String sname;
     private String spwd;
 
+    public SalesMan() {
+    }
+
+    public SalesMan(String sname, String spwd) {
+        this.sname = sname;
+        this.spwd = spwd;
+    }
+
+    public SalesMan(int sid, String sname, String spwd) {
+        this.sid = sid;
+        this.sname =sname;
+        this.spwd = spwd;
+    }
+
+
     public int getSid() {
         return sid;
     }
@@ -30,5 +45,11 @@ public class SalesMan {
 
     public void setSpwd(String spwd) {
         this.spwd = spwd;
+    }
+
+    @Override
+    public String toString() {
+        return getSname()+"\t\t\t"+
+                getSpwd()+"\n";
     }
 }

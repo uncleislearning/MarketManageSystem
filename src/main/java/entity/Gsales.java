@@ -8,9 +8,39 @@ public class Gsales {
     private int gid;
     private int sid;
 
+    private String gname;
     private int gnum;
     private float gprice;
     private int allSum;//单种商品销量总和
+
+    public Gsales(int gnum, int sid, int gid) {
+        this.gnum = gnum;
+        this.sid = sid;
+        this.gid = gid;
+    }
+
+    public Gsales(int gsid, int gnum, int gid, int sid) {
+        this.gsid = gsid;
+        this.gnum = gnum;
+        this.gid = gid;
+        this.sid = sid;
+    }
+
+    public String getGname() {
+        return gname;
+    }
+
+    public void setGname(String gname) {
+        this.gname = gname;
+    }
+
+    public Gsales(String gname, float gnrice, int gnum, int allSnum) {
+        this.gname = gname;
+        this.gprice = gnrice;
+        this.gnum = gnum;
+        this.allSum =allSnum;
+
+    }
 
     public int getGsid() {
         return gsid;
